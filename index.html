@@ -2,7 +2,7 @@
 <html lang="zxx">
 
 <head>
-    <title>Error 404</title>
+    <title>Error 404 | Unknowns Inc.</title>
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
@@ -19,9 +19,38 @@
     <!--/fontAwesome-CSS -->
     <link rel="stylesheet" href="css/fontAwesome.css" type="text/css" media="all" />
     <!--/fontAwesome-CSS -->
+    <!-- Favicon  -->
+    <link rel="icon" href="https://unknownus.tk/images/favicon.png">
+    <!-- Favicon  -->
+    
 </head>
 
 <body>
+    
+    <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v10.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution="setup_tool"
+        page_id="109452750955073">
+      </div>
+    
     <div class="w3l-error-block">
 
         <div class="page">
@@ -30,13 +59,11 @@
                     <a class="brand-logo" href="index.html">Error 404</a>
                 </div>
                 <div class="w3l-error-grid">
-                    <h1>404</h1>
-                    <h2>Page not found</h2>
+                    <h2>Something went wrong. Please try again later.</h2>
                 </div>
 
                 <div class="copy-right text-center">
-                    <p>© 2020 . All rights reserved </p>
-                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+                    <p>Copyright © 2015 - 2021 . All rights reserved by <a href="https://unknowns.tk/">Unknowns Inc.</a> </p>
                 </div>        
             </div>
             <img src="images/bg.jpg" class="img-responsive" alt="error image" />
@@ -77,6 +104,11 @@
             animate();
         </script>
     </div>
+    
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-606fd5449848e106"></script>
+
+    
 </body>
 
 </html>
